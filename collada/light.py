@@ -248,7 +248,7 @@ class PointLight(Light):
             if self.quad_att is not None:
                 pnode.append(E.quadratic_attenuation(str(self.quad_att)))
             if self.zfar is not None:
-                pnode.append(E.zfar(str(self.zvar)))
+                pnode.append(E.zfar(str(self.zfar)))
 
             self.xmlnode = E.light(
                 E.technique_common(pnode)
